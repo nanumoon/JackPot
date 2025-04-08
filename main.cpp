@@ -1,4 +1,5 @@
 #include<iostream>
+#include<algorithm>
 
 #define LOTTO_COUNT	45
 using namespace std;
@@ -26,6 +27,11 @@ void Shuffle()
 		JackPot[First] = JackPot[Second];
 		JackPot[Second] = Swap;
 	}
+	sort(JackPot, JackPot + 6);
+	for (int Array = 0; Array < 6; ++Array)
+	{
+		JackPot[Array];
+	}
 }
 
 void Print()
@@ -44,3 +50,5 @@ int main()
 
 	return 0;
 }
+
+//sizeof
